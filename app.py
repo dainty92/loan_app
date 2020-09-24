@@ -4,6 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import sklearn
 import catboost
+import warnings
+warnings.filterwarnings('ignore')
 
 file = open('model.joblib','rb')
 model = joblib.load(file)
